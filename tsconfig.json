@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        "target": "ES2023",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "downlevelIteration": true,
+        "incremental": true,
+        "baseUrl": ".",
+        "paths": {
+            "@abilities/*": [
+                "./abilities/*"
+            ],
+            "@assets/*": [
+                "./public/assets/*"
+            ],
+            "@generated/*": [
+                "./src/__generated__/*"
+            ],
+            "@*": [
+                "./src*"
+            ]
+        },
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src/types"
+        ]
+    },
+    "include": [
+        "next.config.js",
+        "next-env.d.ts",
+        ".next/types/**/*.ts",
+        "public",
+        "public/assets",
+        "src",
+        "src/**/*",
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules",
+        ".vscode"
+    ],
+}
